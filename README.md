@@ -27,7 +27,7 @@ Example Playbook
     extra_pkgs:
       - nc
   roles:
-    - novomatic-tech/common_pkg
+    - novomatic-tech/common_pkgs
 ```
  License
  -------
