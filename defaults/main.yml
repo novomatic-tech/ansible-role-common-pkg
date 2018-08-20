@@ -1,0 +1,19 @@
+---
+# defaults file for common-pkg
+
+common_pkgs:
+  - curl
+  - tcpdump
+  - git
+  - htop
+  - iotop
+  - jq
+  - smem
+  - sysstat
+  - telnet
+  - vim
+  - wget
+
+#extra_pkgs:
+#  - nc
+#  - nmap

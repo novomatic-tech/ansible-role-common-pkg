@@ -1,0 +1,6 @@
+---
+# tasks file for common_pkg
+
+- include_tasks: install.yml
+  tags:
+    - common-pkg

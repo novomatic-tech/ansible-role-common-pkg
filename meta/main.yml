@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Karol Chrapek
+  role_name: common_pkgs
+  description: Installing packages not included to our corporate base image.
+  company: Novomatic Technologies Poland
+  license: MIT
+  min_ansible_version: 2.5
+  platforms:
+  - name: EL
+    versions:
+    - 7
+  galaxy_tags:
+  - common_pkgs
+
+dependencies: []
