@@ -1,0 +1,17 @@
+---
+- name: Install common packages
+  become: yes
+  become_method: sudo
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.version | default('latest') }}"
+  loop: "{{ common_pkgs }}"
+
+- name: Install extra packages
+  become: yes
+  become_method: sudo
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.version | default('latest') }}"
+  loop: "{{ extra_pkgs }}"
+  when: extra_pkgs is defined

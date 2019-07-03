@@ -2,18 +2,19 @@
 # defaults file for common-pkg
 
 common_pkgs:
-  - curl
-  - tcpdump
-  - git
-  - htop
-  - iotop
-  - jq
-  - smem
-  - sysstat
-  - telnet
-  - vim
-  - wget
+  - name: curl
+    version: latest
+  - name: tcpdump
+  - name: git
+  - name: htop
+  - name: iotop
+  - name: jq
+  - name: smem
+  - name: sysstat
+  - name: telnet
+  - name: vim
+  - name: wget
 
-#extra_pkgs:
-#  - nc
-#  - nmap
+# extra_pkgs:
+#   - name: nc
+#   - name: nmap

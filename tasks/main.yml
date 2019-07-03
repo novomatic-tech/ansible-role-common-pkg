@@ -1,6 +1,12 @@
 ---
 # tasks file for common_pkg
 
-- include_tasks: install.yml
+- include_tasks: install-el.yml
   tags:
     - common-pkg
+  when: ansible_distribution == "RedHat" or ansible_distribution == "CentOS"
+
+- include_tasks: install-ubuntu.yml
+  tags:
+    - common-pkg
+  when: ansible_distribution == 'Ubuntu'

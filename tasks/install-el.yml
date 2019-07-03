@@ -10,15 +10,15 @@
   become: yes
   become_method: sudo
   yum:
-    name: "{{ item }}"
-    state: latest
+    name: "{{ item.name }}"
+    state: "{{ item.version | default('latest') }}"
   loop: "{{ common_pkgs }}"
 
 - name: Install extra packages
   become: yes
   become_method: sudo
   yum:
-    name: "{{ item }}"
-    state: latest
+    name: "{{ item.name }}"
+    state: "{{ item.version | default('latest') }}"
   loop: "{{ extra_pkgs }}"
   when: extra_pkgs is defined

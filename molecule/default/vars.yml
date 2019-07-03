@@ -1,4 +1,4 @@
 ---
 
 extra_pkgs:
-  - nmap
+  - name: nmap
