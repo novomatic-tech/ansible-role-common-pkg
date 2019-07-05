@@ -3,7 +3,7 @@
 
 common_pkgs:
   - name: curl
-    version: latest
+    state: latest
   - name: tcpdump
   - name: git
   - name: htop

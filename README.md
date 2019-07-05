@@ -26,6 +26,7 @@ Example Playbook
   vars:
     extra_pkgs:
       - name: nc
+      - state: present
   roles:
     - novomatic-tech/common_pkgs
 ```

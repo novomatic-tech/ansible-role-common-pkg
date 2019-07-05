@@ -2,3 +2,4 @@
 
 extra_pkgs:
   - name: nmap
+    state: present
