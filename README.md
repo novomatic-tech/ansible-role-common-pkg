@@ -11,12 +11,12 @@ If something is missing please create a issue on [github](https://github.com/nov
 
 Default Behavior
 -----------------
-Please check [install.yml](./tasks/install.yml)
+Please check [install.yml](https://github.com/novomatic-tech/ansible-role-common-pkg/blob/master/tasks/main.yml)
 
 Role Variables
 --------------
 common_pkg have to be defined but extra is a optional var.
-All variables present here: [main.yml](./defaults/main.yml).
+All variables present here: [main.yml](https://github.com/novomatic-tech/ansible-role-common-pkg/blob/master/defaults/main.yml).
 
 
 Example Playbook
@@ -26,7 +26,7 @@ Example Playbook
   vars:
     extra_pkgs:
       - name: nc
-      - state: present
+        state: present
   roles:
     - novomatic-tech/common_pkgs
 ```
