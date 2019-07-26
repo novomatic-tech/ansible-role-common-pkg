@@ -14,7 +14,12 @@ common_pkgs:
   - name: telnet
   - name: vim
   - name: wget
+  - name: python-pip
 
 # extra_pkgs:
 #   - name: nc
 #   - name: nmap
+
+# common_pip_pkgs:
+#   - name: docker
+#   - name: docker-compose

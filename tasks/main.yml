@@ -4,9 +4,16 @@
 - include_tasks: install-el.yml
   tags:
     - common-pkg
+    - python
   when: ansible_distribution == "RedHat" or ansible_distribution == "CentOS"
 
 - include_tasks: install-ubuntu.yml
   tags:
     - common-pkg
+    - python
   when: ansible_distribution == 'Ubuntu'
+
+- include_tasks: pip.yml
+  tags:
+    - common-pkg
+    - python

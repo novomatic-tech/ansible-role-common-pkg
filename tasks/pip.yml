@@ -1,0 +1,6 @@
+---
+- name: Install python modules
+  pip:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('latest') }}"
+  loop: "{{ common_pip_pkgs }}"

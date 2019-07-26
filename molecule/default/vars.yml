@@ -3,3 +3,9 @@
 extra_pkgs:
   - name: nmap
     state: present
+
+common_pip_pkgs:
+  - name: docker
+    state: present
+  - name: docker-compose
+    state: present
