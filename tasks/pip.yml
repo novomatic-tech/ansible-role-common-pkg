@@ -4,3 +4,4 @@
     name: "{{ item.name }}"
     state: "{{ item.state | default('latest') }}"
   loop: "{{ common_pip_pkgs }}"
+  when: common_pip_pkgs is defined
