@@ -12,6 +12,7 @@
   yum:
     name: "{{ item.name }}"
     state: "{{ item.state | default('latest') }}"
+  retries: "{{ common_pkgs_retries }}"
   loop: "{{ common_pkgs }}"
 
 - name: Install extra packages
@@ -20,5 +21,6 @@
   yum:
     name: "{{ item.name }}"
     state: "{{ item.state | default('latest') }}"
+  retries: "{{ common_pkgs_retries }}"
   loop: "{{ extra_pkgs }}"
   when: extra_pkgs is defined

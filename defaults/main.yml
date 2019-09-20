@@ -1,6 +1,8 @@
 ---
 # defaults file for common-pkg
 
+common_pkgs_retries: 3
+
 common_pkgs:
   - name: curl
     state: latest
