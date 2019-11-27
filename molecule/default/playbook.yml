@@ -1,4 +1,19 @@
 ---
+
+- name: Prepare -- Install dependencies
+  hosts: centos7
+  any_errors_fatal: yes
+  pre_tasks:
+    - name: Install required packages
+      yum:
+        name: '{{ item }}'
+        state: present
+        disable_gpg_check: yes
+      loop:
+        - epel-release
+        - gcc
+        - python-devel
+
 - hosts: all
   any_errors_fatal: yes
   pre_tasks:
