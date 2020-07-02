@@ -1,4 +1,9 @@
 ---
+- name: Install pip
+  easy_install:
+    name: pip
+    state: latest
+    
 - name: Install python modules
   pip:
     name: "{{ item.name }}"
